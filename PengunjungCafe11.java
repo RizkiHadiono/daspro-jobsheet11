@@ -1,11 +1,13 @@
 public class PengunjungCafe11 {
     public static void daftarPengunjung (String... namaPengunjung) {
         System.out.println("Daftar nama Pengunjung:");
-        for (int i = 0; i < namaPengunjung.length; i++) {
-            System.out.println("-"+ namaPengunjung[i]);
+
+        // Menggunakan for-each Loop
+        for (String pengunjung : namaPengunjung) {
+            System.out.println("- "+ pengunjung);
         }
     }
     public static void main(String[] args) {
-     daftarPengunjung("Ali", "Budi", "Citra");   
+        daftarPengunjung("Ali", "Budi", "Citra");   
     }
 }
